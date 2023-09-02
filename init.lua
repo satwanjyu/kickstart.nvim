@@ -295,6 +295,7 @@ pcall(require('telescope').load_extension, 'fzf')
 
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').help_tags, { desc = 'Help' })
+vim.keymap.set('n', '<leader>f', require('telescope.builtin').find_files, { desc = 'Find file' })
 vim.keymap.set('n', '<leader>b', require('telescope.builtin').buffers, { desc = 'Find buffer' })
 vim.keymap.set('n', '<leader>/', function()
   -- You can pass additional configuration to telescope to change theme, layout, etc.
